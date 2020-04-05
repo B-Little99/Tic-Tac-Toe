@@ -1,5 +1,13 @@
 * {
     box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+header, p {
+text-align: center;
+margin: 20px;
+padding: 20px;
+font-size: 30px;
 }
 
 .board {
@@ -8,7 +16,6 @@
     grid-template-rows: repeat(3, auto);
     justify-items: center;
     justify-content: center;
-
 }
 
 .boardTile {
@@ -22,9 +29,24 @@
     cursor: pointer;
 }
 
-.boardTile:hover {
-    
+.boardTile:hover:not(.x):not(.o) {
+    background-color: #BCD6EF;
+    color: slategray;
+
 }
+
+.x {
+    color: blue;
+}
+
+.o {
+    color: purple;
+}
+
+.done {
+    cursor: not-allowed;
+}
+
 
 /* This CSS gets rid of the outside border so the grid looks like it should */
 #section1, #section2, #section3 {
