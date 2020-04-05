@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.boardTile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.boardTile:hover {
+    
+}
+
+/* This CSS gets rid of the outside border so the grid looks like it should */
+#section1, #section2, #section3 {
+    border-top: none;
+}
+
+#section1, #section4, #section7 {
+    border-left: none;
+}
+
+#section7, #section8, #section9 {
+    border-bottom: none;
+}
+
+#section3, #section6, #section9 {
+    border-right: none;
+}
