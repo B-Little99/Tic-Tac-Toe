@@ -1,12 +1,21 @@
 * {
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
+    background-color: #BDE9D3;
+}
+
+header {
+    font-size: 45px;
+    font-weight: bold;
 }
 
 header, p {
     text-align: center;
     margin: 20px;
     padding: 10px;
+}
+
+p {
     font-size: 25px;
 }
 
@@ -52,12 +61,12 @@ button:hover {
 }
 
 .x {
-    color: blue;
+    color: white;
     cursor: not-allowed;
 }
 
 .o {
-    color: purple;
+    color: grey;
     cursor: not-allowed;
 }
 
@@ -67,7 +76,7 @@ button:hover {
 
 .winner {
     color: red;
-    font-size: 120px;
+    font-size: 110px;
 }
 
 
