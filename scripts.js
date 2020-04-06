@@ -98,7 +98,6 @@ function placeO(ev){
     let sectionId = ev.target.id;
     let content = ev.target.innerHTML;
     if (content === "" && winner === false) {
-        // playerIndication.innerHTML = "Player 2 please place an o";
         document.getElementById(sectionId).innerHTML = "o";
         document.getElementById(sectionId).className = document.getElementById(sectionId).className + " done o";
         checkForWin();
