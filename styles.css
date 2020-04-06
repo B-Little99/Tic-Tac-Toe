@@ -4,10 +4,28 @@
 }
 
 header, p {
-text-align: center;
-margin: 20px;
-padding: 20px;
-font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+button {
+    margin: 15px auto;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
 }
 
 .board {
@@ -29,22 +47,27 @@ font-size: 30px;
     cursor: pointer;
 }
 
-.boardTile:hover:not(.x):not(.o) {
+.boardTile:hover:not(.x):not(.o) { /* This will allow the user to hover on all board tiles except the x and o's */
     background-color: #BCD6EF;
-    color: slategray;
-
 }
 
 .x {
     color: blue;
+    cursor: not-allowed;
 }
 
 .o {
     color: purple;
+    cursor: not-allowed;
 }
 
 .done {
     cursor: not-allowed;
+}
+
+.winner {
+    color: red;
+    font-size: 120px;
 }
 
 
